@@ -762,14 +762,36 @@
         <br/>
       </table>
       <h3><em>Agregar Estudios</h3></em>
-      <form>
-        <fieldset>
-          <legend>Año</legend>
-          <select>
-            <option>2008</option>
-            <option>2009</option>
-            <option>2011</option>
-            <option>2014</option>
-          </select>
-        </fieldset>
+      <form autocomplete="on" name="Estudios Realizados">
         <p>
+          <label>Año:</label>
+          <select>
+            <option>2007</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2012</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="lblInstituto">Institucion:</label>
+          <input type="text" name="" id="txtIsnt" placeholder="Ej:Universidad" required>
+        </p>
+        <p>
+          <label for="lblLugar">Lugar:</label><br/>
+          <textarea name="Lugar y Dirección" rows="10" cols="40"></textarea>
+        </p>
+        <p>
+          <label for="lblCulmino">¿Culminó?</label>
+
+          <label for="si">SI</label>
+          <input type="radio" id="si" name="SI" value="SI">
+          <label for="no">NO</label>
+          <input type="radio" id="no" name="NO" value="NO">
+        </p>
+        <p>
+          <input type="submit" value="Enviar">
+        </p>
+
+
+        </p>
